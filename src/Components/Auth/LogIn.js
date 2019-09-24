@@ -1,5 +1,5 @@
 import React from 'react';
-import auth from "../auth";
+import auth from "../Routes/protectedRoutes/auth";
 
 const LogIn = (props) => {
     return (

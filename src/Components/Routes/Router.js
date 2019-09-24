@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import AllProducts from "./Routes/AllProducts";
-import Checkout from "./Routes/Checkout";
-import Cart from "./Routes/Cart";
-import Home from "./Routes/Home";
-import EditProfile from "./Routes/protectedRoutes/EditProfile";
-import ViewProfile from "./Routes/protectedRoutes/ViewProfile";
-import LogIn from "./Routes/LogIn";
-import SingleProducts from "./Routes/SingleProducts";
-import SignUp from "./Routes/SignUp";
-import Navigation from "./Navigation";
+import AllProducts from "../Products/AllProducts";
+import Checkout from "../Cart/Checkout";
+import Cart from "../Cart/Cart";
+import Home from "../Home/Home";
+import EditProfile from "./protectedRoutes/Profile/EditProfile";
+import ViewProfile from "./protectedRoutes/Profile/ViewProfile";
+import LogIn from "../Auth/LogIn";
+import SingleProducts from "../Products/SingleProducts";
+import SignUp from "../Auth/SignUp";
+import NavBar from "../NavBar/NavBar";
 
 class Routes extends Component {
   render() {
     return (
       <Router>
-        <Navigation/>
+        <NavBar/>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/SignUp' component={SignUp} />
