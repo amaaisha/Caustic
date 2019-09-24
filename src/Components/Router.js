@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import App from '../App'
 import AllProducts from "./Routes/AllProducts";
 import Checkout from "./Routes/Checkout";
 import Cart from "./Routes/Cart";
@@ -10,14 +9,15 @@ import ViewProfile from "./Routes/protectedRoutes/ViewProfile";
 import LogIn from "./Routes/LogIn";
 import SingleProducts from "./Routes/SingleProducts";
 import SignUp from "./Routes/SignUp";
+import Navigation from "./Navigation";
 
 class Routes extends Component {
   render() {
     return (
       <Router>
+        <Navigation/>
         <Switch>
-          <Route exact path='/' component={App} />
-          <Route exact path='/Home' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/LogIn' component={LogIn} />
           <Route exact path='/ViewProfile' component={ViewProfile} />
