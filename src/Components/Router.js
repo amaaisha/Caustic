@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Switch, Route, Redirect, NavLink} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import App from '../App'
 import AllProducts from "./Routes/AllProducts";
 import Checkout from "./Routes/Checkout";
 import Cart from "./Routes/Cart";
@@ -14,11 +15,8 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <NavLink to={'/'}>Home</NavLink>
-
         <Switch>
-          {/*<Route path="*" component={() => "404 NOT FOUND"} />*/}
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={App} />
           <Route exact path='/Home' component={Home} />
           <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/LogIn' component={LogIn} />
