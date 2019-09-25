@@ -5,12 +5,12 @@ class Auth {
 
   login(callback) {
     this.authenticated = true;
-    setTimeout(callback, 100);
+    callback();
   }
 
   logout(callback) {
     this.authenticated = false;
-    setTimeout(callback, 100);
+    callback();
   }
 
   isAuthenticated() {

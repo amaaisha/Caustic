@@ -19,14 +19,14 @@ class Routes extends Component {
         <NavBar/>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/sign-up' component={SignUp} />
-          <Route exact path='/logIn' component={LogIn} />
+          <Route exact path='sign-up' component={SignUp} />
+          <Route exact path='/log-in' component={LogIn} />
           <ProtectedRoute exact path='/view-profile' component={ViewProfile} />
           <Route exact path='/single-products' component={SingleProducts} />
           <ProtectedRoute exact path='/edit-profile' component={EditProfile} />
           <Route exact path='/cart' component={Cart} />
           <Route exact path='/checkout' component={Checkout} />
-          <Route exact path='/all-products' component={AllProducts} />
+          <Route exact path='/products' component={AllProducts} />
         </Switch>
       </Router>
     );
