@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="moved navigation to router.">
+    <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/EditProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ViewProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/AllProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Products/AllProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cart/Checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/SingleProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Products/SingleProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/Profile/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/ViewProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/Profile/ViewProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Routes/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/Profile/EditProfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/Profile/ViewProfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/protectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/protectedRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +55,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\WebstormProjects\Caustic\src\Components" />
       <recent name="C:\Users\Administrator\WebstormProjects\Caustic\src\Components\Routes\protectedRoutes\Profile" />
       <recent name="C:\Users\Administrator\WebstormProjects\Caustic\src\Components\Routes\protectedRoutes" />
       <recent name="C:\Users\Administrator\WebstormProjects\Caustic\src\Components\Routes" />
-      <recent name="C:\Users\Administrator\WebstormProjects\Caustic\src\Components" />
       <recent name="C:\Users\Administrator\WebstormProjects\Caustic\src\Components\Navigation" />
     </key>
   </component>
@@ -113,7 +106,8 @@
       <workItem from="1569230550566" duration="2886000" />
       <workItem from="1569259298164" duration="3718000" />
       <workItem from="1569268344058" duration="3089000" />
-      <workItem from="1569352024224" duration="6611000" />
+      <workItem from="1569352024224" duration="7391000" />
+      <workItem from="1569403191024" duration="4663000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Routes">
       <created>1569259749230</created>
@@ -143,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569362419357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Moved each routes into individual components.">
+      <created>1569363869490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569363869490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +169,7 @@
     <MESSAGE value="Basic Routes" />
     <MESSAGE value="Broken code" />
     <MESSAGE value="moved navigation to router." />
-    <option name="LAST_COMMIT_MESSAGE" value="moved navigation to router." />
+    <MESSAGE value="Moved each routes into individual components." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved each routes into individual components." />
   </component>
 </project>
