@@ -5,14 +5,14 @@ const NavBar = () => {
   return (
     <div>
       <NavLink to={'/'}>Home</NavLink>
-      <NavLink to={'/LogIn'}>Log In</NavLink>
-      <NavLink to={'/SignUp'}>SignUp</NavLink>
-      <NavLink to={'/ViewProfile'}>View Profile</NavLink>
-      <NavLink to={'/SingleProducts'}>Single Products</NavLink>
-      <NavLink to={'/EditProfile'}>Edit Profile</NavLink>
-      <NavLink to={'/Cart'}>Cart</NavLink>
-      <NavLink to={'/Checkout'}>Checkout</NavLink>
-      <NavLink to={'/AllProducts'}>All Products</NavLink>
+      <NavLink to={'/log-in'}>Log In</NavLink>
+      <NavLink to={'/sign-up'}>SignUp</NavLink>
+      <NavLink to={'/view-profile'}>View Profile</NavLink>
+      <NavLink to={'/single-products'}>Single Products</NavLink>
+      <NavLink to={'/edit-profile'}>Edit Profile</NavLink>
+      <NavLink to={'/cart'}>Cart</NavLink>
+      <NavLink to={'/checkout'}>Checkout</NavLink>
+      <NavLink to={'/products'}>All Products</NavLink>
     </div>
   )
 };
