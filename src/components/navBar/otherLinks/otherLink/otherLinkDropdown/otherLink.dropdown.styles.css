@@ -1,0 +1,11 @@
+.otherLinkDropdownContainer {
+    display: none;
+    padding: 60px;
+    position: absolute;
+    background-color: orange;
+    top: 120px;
+}
+
+.otherLinkContainer:hover .otherLinkDropdownContainer {
+    display: flex;
+}

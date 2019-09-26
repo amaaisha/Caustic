@@ -1,0 +1,44 @@
+.navBarLinkContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13pt;
+}
+
+.navBarLinkContainer:hover .navLinkName {
+    color: #9f7a49;
+}
+
+.navBarLinkContainer:hover .navBarLinkDropdown {
+    display: flex;
+}
+
+.navLinkName {
+    color: #ffffff;
+    margin-right: 11px;
+    letter-spacing: 1px;
+}
+
+.navBarInfoContainer {
+    padding: 0 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarLinkDropdown {
+    box-shadow: 0 30px 106px -37px #dddddd;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    top: 120px;
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+}

@@ -1,0 +1,15 @@
+.otherLinksContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    height: 100%;
+}
+
+.otherLinksProfileContainer, .otherLinksSearchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    height: 100%;
+    width: 15%;
+}

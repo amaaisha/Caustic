@@ -1,0 +1,23 @@
+.navBarContainer {
+    padding: 0 40px;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    height: 120px;
+    width: 100%;
+}
+
+.navBarLogoContainer {
+    background-image: url("http://pngimg.com/uploads/nike/nike_PNG7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+}
+
+.navLinksContainer {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    display: flex;
+}
