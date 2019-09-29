@@ -4,6 +4,7 @@ import auth from '../../routes/protectedRoutes/auth';
 const LogInPage = (props) => (
   <div>
     <h2>Log in </h2>
+
     <button
       onClick={() => {
         auth.logout(() => {

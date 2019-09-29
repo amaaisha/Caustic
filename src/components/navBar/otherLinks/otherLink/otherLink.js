@@ -16,7 +16,7 @@ const OtherLink = ({ activeIcon, inactiveIcon, dropDown, route }) => {
       className='otherLinkContainer'
     >
       <Icon size={27} icon={active ? activeIcon : inactiveIcon} />
-      {/*{dropDown && <OtherLinkDropdown />}*/}
+      {/* {dropDown && <OtherLinkDropdown />} */}
     </Link>
   );
 };
