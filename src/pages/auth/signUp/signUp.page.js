@@ -23,10 +23,10 @@ const SignUpPage = () => (
     {({ handleSubmit, handleChange }) => (
       <>
         <h1>Sign Up</h1>
-        <input onChange={handleChange('firstName')}  placeholder={'First Name'} />
-        <input onChange={handleChange('lastName')}  placeholder={'last Name'} />
-        <input onChange={handleChange('email')}  placeholder={'email'} />
-        <input onChange={handleChange('password')}  placeholder={'password'} />
+        <input onChange={handleChange('firstName')}  placeholder='First Name' />
+        <input onChange={handleChange('lastName')}  placeholder='last Name' />
+        <input onChange={handleChange('email')}  placeholder='email' />
+        <input onChange={handleChange('password')}  placeholder='password' />
 
         <button onClick={handleSubmit}>Submit</button>
       </>

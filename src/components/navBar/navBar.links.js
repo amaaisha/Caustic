@@ -7,6 +7,7 @@ const navLinks = [
   {
     name: 'Shop',
     dropDown: true,
+    route: 'products'
   },
   {
     name: 'Model',

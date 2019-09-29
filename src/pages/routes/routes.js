@@ -26,7 +26,7 @@ const Routes = () => (
         <ProtectedRoute exact path='/edit-profile' component={EditProfile} />
         <Route exact path='/cart' component={CartPage} />
         <Route exact path='/checkout' component={CheckoutPage} />
-        <Route exact path='/product' component={ProductPage} />
+        <Route exact path='/products' component={ProductPage} />
         <Route exact path='/search' component={SearchPage} />
       </Switch>
     </div>
