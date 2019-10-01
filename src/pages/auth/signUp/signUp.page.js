@@ -1,12 +1,25 @@
 import React from 'react';
-import { Formik } from 'formik';
-import signUpSchema from '../../../utils/validation/signUpSchema'
-import {store} from '../../../redux/store'
+import './signUp.styles.css';
+import {Link} from "react-router-dom";
+import Form from './form/form'
+import Button from './button/button'
 
-const {dispatch} = store;
-
-const signUp = (values) => {
-  dispatch.user.signUp(values);
+const SignUpPage = () => {
+    return (
+      <div className='container1'>
+        <div className='header'>
+          <div className='createAccount'>Create Account</div>
+          <div className='home-create'>
+            <Link to='/' className='homeSpan'>Home</Link> / Create Account
+          </div>
+        </div>
+        <div className='body'>
+          <Form />
+          <Button />
+        </div>
+        <div className='footer'></div>
+      </div>
+    );
 };
 
 const SignUpPage = () => (

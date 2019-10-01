@@ -1,34 +1,31 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import './login.styles.css';
+import LoginForm from "./form2/loginForm";
+import LoginButton from "./loginButton/loginButton";
 import { Formik } from 'formik';
 import loginSchema from '../../../utils/validation/loginSchema'
 import {store} from "../../../redux/store";
 
 const {dispatch} = store;
 
-const login = (values) => {
-  dispatch.user.login(values);
+const LogInPage = () => {
+    return (
+      <div className='container2'>
+        <div className='header2'>
+          <div className='account'>Account</div>
+          <div className='home-create2'>
+            <Link to='/' className='homeSpan2'>Home</Link> / Account
+          </div>
+        </div>
+        <div className='body2'>
+          <LoginForm />
+          <Link to='/' className='body2link' ><p>Forgot your password?</p></Link>
+          <LoginButton />
+          <Link to='/' className='body2link' ><p className='return'>Return to Store</p></Link>
+        </div>
+      </div>
+    );
 };
-
-
-const LogInPage = () => (
-  <Formik
-    initialValues={{
-      email: '',
-      password: '',
-    }}
-    validationSchema={loginSchema}
-    onSubmit={login}
-  >
-    {({ handleSubmit, handleChange }) => (
-      <>
-        <h1>Log In</h1>
-        <input onChange={handleChange('email')}  placeholder='email' />
-        <input onChange={handleChange('password')}  placeholder='password' />
-        <button type='submit' onClick={handleSubmit}>Submit</button>
-      </>
-    )
-    }
-  </Formik>
-);
 
 export default LogInPage;

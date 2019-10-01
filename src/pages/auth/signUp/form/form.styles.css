@@ -1,0 +1,31 @@
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70%;
+}
+
+.formContainer input {
+	width: 390px;
+	height: 52px;
+	margin-bottom: 45px;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	border-color: #f4f4f4;
+	border-width: 0.5px;
+	color: black;
+	padding-left: 10px;
+	outline: none;
+	border-style: solid;
+}
+
+input:Hover {
+	border-color: #9f7a49;
+}
