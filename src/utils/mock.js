@@ -1,40 +1,40 @@
 const categoryArray = [
   {
     id: 1,
-    name:'clothes',
+    name: 'clothes',
     products: [
       {
         id: 1,
         name: 'trouser',
         price: '2000',
-        picture: 'https://images-na.ssl-images-amazon.com/images/I/71amnx7DoOL._UX395_.jpg'
-      }
-    ]
+        picture: 'https://images-na.ssl-images-amazon.com/images/I/71amnx7DoOL._UX395_.jpg',
+      },
+    ],
   },
   {
     id: 2,
-    name:'Beauty',
+    name: 'Beauty',
     products: [
       {
         id: 2,
         name: 'make-up',
         price: '2000',
-        picture: 'https://images-na.ssl-images-amazon.com/images/I/71amnx7DoOL._UX395_.jpg'
-      }
-    ]
+        picture: 'https://images-na.ssl-images-amazon.com/images/I/71amnx7DoOL._UX395_.jpg',
+      },
+    ],
   },
   {
     id: 3,
-    name:'Toilet',
+    name: 'Toilet',
     products: [
       {
         id: 3,
         name: 'soap',
         price: '2000',
-        picture: 'https://images-na.ssl-images-amazon.com/images/I/71amnx7DoOL._UX395_.jpg'
-      }
-    ]
-  }
+        picture: 'https://images-na.ssl-images-amazon.com/images/I/71amnx7DoOL._UX395_.jpg',
+      },
+    ],
+  },
 ];
 
-export default categoryArray
+export default categoryArray;

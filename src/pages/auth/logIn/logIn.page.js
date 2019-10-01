@@ -1,31 +1,22 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom';
 import './login.styles.css';
-import LoginForm from "./form2/loginForm";
-import LoginButton from "./loginButton/loginButton";
-import { Formik } from 'formik';
-import loginSchema from '../../../utils/validation/loginSchema'
-import {store} from "../../../redux/store";
+import LoginForm from './form2/loginForm';
 
-const {dispatch} = store;
+const LogInPage = () => (
+  <div className='container2'>
+    <div className='header2'>
+      <div className='account'>Account</div>
+      <div className='home-create2'>
+        <Link to='/' className='homeSpan2'>Home</Link>
 
-const LogInPage = () => {
-    return (
-      <div className='container2'>
-        <div className='header2'>
-          <div className='account'>Account</div>
-          <div className='home-create2'>
-            <Link to='/' className='homeSpan2'>Home</Link> / Account
-          </div>
-        </div>
-        <div className='body2'>
-          <LoginForm />
-          <Link to='/' className='body2link' ><p>Forgot your password?</p></Link>
-          <LoginButton />
-          <Link to='/' className='body2link' ><p className='return'>Return to Store</p></Link>
-        </div>
+/ Account
       </div>
-    );
-};
+    </div>
+    <div className='body2'>
+      <LoginForm />
+    </div>
+  </div>
+);
 
 export default LogInPage;

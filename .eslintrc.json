@@ -4,9 +4,7 @@
         "es6": true
     },
     "extends": [
-        "airbnb",
-        "prettier",
-        "prettier/react"
+        "airbnb"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -20,14 +18,12 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "prettier"
+        "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/prop-types": [0],
-        "react/jsx-props-no-spreading": [0],
-        "jsx-quotes": ["error", "prefer-single"]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "jsx-quotes": ["error", "prefer-single"],
+        "no-tabs": ["error", { "allowIndentationTabs": true }]
     }
 }
-

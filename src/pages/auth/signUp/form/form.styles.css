@@ -15,6 +15,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-color: #eeeeee;
+	border-width: 1px;
+	border-style: solid;
 }
 
 input {
