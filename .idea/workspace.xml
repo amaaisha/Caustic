@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product/product.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/product.page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/products.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/products.page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/models/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mock.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.lint-fix">
+  <component name="RunManager" selected="npm.start">
     <configuration name="lint-fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />

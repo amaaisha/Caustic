@@ -6,7 +6,8 @@ const categoryState = {
   category: {
     name: '',
     products: []
-  }
+  },
+  ascending: true
 };
 
 export const category = {
@@ -16,7 +17,7 @@ export const category = {
       let productsArray = [];
       state.categories.map(({products}) => {
         productsArray = [...productsArray, ...products];
-      })
+      });
       return{
         ...state,
         products: productsArray,
@@ -24,11 +25,40 @@ export const category = {
       }
     },
     getCategoryProducts: (state, payload) => {
-      const category = state.categories.find( ({id}) => id === payload)
+      const category = state.categories.find( ({id}) => id === payload);
       return{
         ...state,
         category,
         products: category.products
+      }
+    },
+    sortProducts: (state, payload) => {
+      let products = state.products.slice(0);
+      const ascending = state.ascending;
+      products.sort((a, b) => {
+        if(ascending){
+          if ( a[payload] > b[payload] ){
+            return -1;
+          }
+          if ( a[payload] < b[payload] ){
+            return 1;
+          }
+          return 0;
+        }else{
+          if ( a[payload] < b[payload] ){
+            return -1;
+          }
+          if ( a[payload] > b[payload] ){
+            return 1;
+          }
+          return 0;
+        }
+        });
+
+      return{
+        ...state,
+        ascending: !ascending,
+        products
       }
     }
   },

@@ -21,12 +21,12 @@ const Routes = () => (
         <Route exact path='/' component={HomePage} />
         <Route exact path='/sign-up' component={SignUpPage} />
         <Route exact path='/log-in' component={LogInPage} />
-        <Route exact path='/single-products' component={ProductsPage} />
+        <Route exact path='/products' component={ProductsPage} />
         <ProtectedRoute exact path='/profile' component={ViewProfile} />
         <ProtectedRoute exact path='/edit-profile' component={EditProfile} />
         <Route exact path='/cart' component={CartPage} />
         <Route exact path='/checkout' component={CheckoutPage} />
-        <Route exact path='/products' component={ProductPage} />
+        <Route exact path='/product' component={ProductPage} />
         <Route exact path='/search' component={SearchPage} />
       </Switch>
     </div>
