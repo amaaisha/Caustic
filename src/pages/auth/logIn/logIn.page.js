@@ -1,20 +1,34 @@
 import React from 'react';
-import auth from '../../routes/protectedRoutes/auth';
+import { Formik } from 'formik';
+import loginSchema from '../../../utils/validation/loginSchema'
+import {store} from "../../../redux/store";
 
-const LogInPage = (props) => (
-  <div>
-    <h2>Log in </h2>
+const {dispatch} = store;
 
-    <button
-      onClick={() => {
-        auth.logout(() => {
-          props.history.push('/Home');
-        });
-      }}
-    >
-          Logout
-    </button>
-  </div>
+const login = (values) => {
+  dispatch.user.login(values);
+};
+
+
+const LogInPage = () => (
+  <Formik
+    initialValues={{
+      email: '',
+      password: '',
+    }}
+    validationSchema={loginSchema}
+    onSubmit={login}
+  >
+    {({ handleSubmit, handleChange }) => (
+      <>
+        <h1>Log In</h1>
+        <input onChange={handleChange('email')}  placeholder='email' />
+        <input onChange={handleChange('password')}  placeholder='password' />
+        <button type='submit' onClick={handleSubmit}>Submit</button>
+      </>
+    )
+    }
+  </Formik>
 );
 
 export default LogInPage;

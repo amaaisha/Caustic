@@ -28,7 +28,7 @@ const SignUpPage = () => (
         <input onChange={handleChange('email')}  placeholder='email' />
         <input onChange={handleChange('password')}  placeholder='password' />
 
-        <button onClick={handleSubmit}>Submit</button>
+        <button type='submit' onClick={handleSubmit}>Submit</button>
       </>
     )
     }

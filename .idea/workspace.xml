@@ -2,75 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/activeCart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/activeDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/activeProfile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/activeSearch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/inactiveCart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/inactiveDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/inactiveProfile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/inactiveSearch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icon/icon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icon/icon.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/navBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/navBar.links.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/navBar.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/navBarRoute/navBar.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/navBarRoute/navBar.route.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/otherLinks/otherLink/otherLink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/otherLinks/otherLink/otherLink.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/otherLinks/otherLink/otherLinkDropdown/otherLink.dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/otherLinks/otherLink/otherLinkDropdown/otherLink.dropdown.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/otherLinks/otherLinks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/otherLinks/otherLinks.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/cart.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/home.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/product/product.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/products.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/routes/protectedRoutes/protectedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/routes/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/search/search.page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Auth/LogIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Auth/SignUp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Cart/Cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Cart/Checkout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/NavBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/dropDownMenu/dropDownMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/dropDownMenu/dropDownMenu.styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/icons8-biohazard-40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/icons8-checkout-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/icons8-user-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/navBar.styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Products/AllProducts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Products/SingleProducts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/EditProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ViewProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/Router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/routes/protectedRoutes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Routes/protectedRoutes/protectedRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/url.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/models/user.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,8 +59,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
