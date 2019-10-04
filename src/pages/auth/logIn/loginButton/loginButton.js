@@ -3,7 +3,7 @@ import './loginButton.styles.css';
 
 const LoginButton = () => {
 	return (
-		<div className='bodyButton1'>
+		<div className='loginButton'>
 			{/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
 			<button>
 				SIGN IN

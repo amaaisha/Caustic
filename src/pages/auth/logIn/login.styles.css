@@ -1,4 +1,4 @@
-.container2 {
+.logInContainer {
 	width: 100vw;
 	height: 100vh;
 	flex: 1;
@@ -7,7 +7,7 @@
 	flex-direction: column;
 }
 
-.header2 {
+.logInHeader {
 	height: 20%;
 	width: 100%;
 	background: #f4f4f4;
@@ -27,22 +27,22 @@
 	font-family: kirvyregular, sans-serif;
 }
 
-.home-create2{
+.logInHeaderLinks {
 	font-size: 16px;
 	font-family: Jura, serif;
 }
 
-.homeSpan2 {
+.logInHomeSpan {
 	text-decoration: none;
 	color: black;
 }
 
-.homeSpan2:Hover {
+.logInHomeSpan:Hover {
 	text-decoration: none;
 	color: #9f7a49;
 }
 
-.body2 {
+.logInBody {
 	height: 60%;
 	width: 100%;
 	background-color: white;
@@ -52,7 +52,7 @@
 	flex-direction: column;
 }
 
-.body2 p{
+.logInBody p{
 	padding-bottom: 30px;
 	font-size: large;
 	font-weight: lighter;
@@ -62,12 +62,12 @@
 	padding-top: 30px;
 }
 
-.body2link {
+.textLinks {
 	text-decoration: none;
 	color: black;
 }
 
-.body2link:Hover {
+.textLinks:Hover {
 	color: #9f7a49;
 	-webkit-transition: color 0.5s ease-out;
 

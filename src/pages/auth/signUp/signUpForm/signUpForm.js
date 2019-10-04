@@ -1,9 +1,9 @@
 import React from 'react';
-import './form.styles.css';
+import './signUpForm.styles.css';
 
-const Form = () => {
+const SignUpForm = () => {
 	return (
-		<form className='formContainer'>
+		<form className='signUpFormContainer'>
 			<input type='text' placeholder='First Name'/>
 			<input type='text' placeholder='Last Name'/>
 			<input type='email' placeholder='Email'/>
@@ -12,4 +12,4 @@ const Form = () => {
 	);
 };
 
-export default Form;
+export default SignUpForm;

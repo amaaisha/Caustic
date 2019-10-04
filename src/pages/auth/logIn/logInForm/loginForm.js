@@ -3,7 +3,7 @@ import './loginForm.styles.css'
 
 const LoginForm = () => {
 	return (
-		<form className='formContainer1'>
+		<form className='logInFormContainer'>
 			<input type='email' placeholder='Email'/>
 			<input type='password' placeholder='Password'/>
 		</form>

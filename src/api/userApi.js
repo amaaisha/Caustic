@@ -42,7 +42,7 @@ class userApi {
       data: formData,
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'multipart/form-data',
+        'Content-Type': 'multipart/signUpForm-data',
       },
     })
       .then(({data}) => data)
@@ -93,7 +93,7 @@ class userApi {
       data: formData,
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'multipart/form-data',
+        'Content-Type': 'multipart/signUpForm-data',
       },
     })
       .then(({data}) => data)

@@ -1,9 +1,9 @@
 import React from 'react';
-import './button.styles.css';
+import './signUpButton.styles.css';
 
-const Button = () => {
+const SignUpButton = () => {
 	return (
-		<div className='bodyButton'>
+		<div className='createAccountButton'>
 			{/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
 			<button>
 				Create Account
@@ -12,4 +12,4 @@ const Button = () => {
 	)
 };
 
-export default Button;
+export default SignUpButton;
