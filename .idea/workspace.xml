@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product/product.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/product.page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/products/products.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/products.page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/models/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mock.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint-fix" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.lint-fix" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +129,8 @@
       <workItem from="1569403191024" duration="8403000" />
       <workItem from="1569448138137" duration="20812000" />
       <workItem from="1569500989982" duration="1934000" />
+      <workItem from="1570180755428" duration="426000" />
+      <workItem from="1570182044436" duration="3617000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Routes">
       <created>1569259749230</created>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569408116901</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="sorted products , categorised products">
+      <created>1569940544282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569940544282</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +209,7 @@
     <MESSAGE value="moved navigation to router." />
     <MESSAGE value="Moved each routes into individual components." />
     <MESSAGE value="protected routes are working. changed routes to small letters" />
-    <option name="LAST_COMMIT_MESSAGE" value="protected routes are working. changed routes to small letters" />
+    <MESSAGE value="sorted products , categorised products" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorted products , categorised products" />
   </component>
 </project>

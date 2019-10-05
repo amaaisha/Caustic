@@ -22,8 +22,13 @@ const ProductsPage = ({categories, products, category}) => {
     dispatch.category.sortProducts('price');
   };
 
+
   return(
     <>
+      <input type={'text'}
+      placeholder={'Search.....'}
+      onChange={handleSearch}/>
+
       <h2>Categories</h2>
       {categories.map(({id, name}) =>
         <div key={id}>

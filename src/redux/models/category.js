@@ -7,7 +7,14 @@ const categoryState = {
     name: '',
     products: []
   },
-  ascending: true
+  ascending: true,
+  query: '',
+  results: {},
+  loading: false,
+  message: '',
+  totalResults: 0,
+  totalPages: 0,
+  currentPageNo: 0
 };
 
 export const category = {
@@ -33,8 +40,8 @@ export const category = {
       }
     },
     sortProducts: (state, payload) => {
-      let products = state.products.slice(0);
-      const ascending = state.ascending;
+      const products = state.products.slice(0);
+      const {ascending} = state;
       products.sort((a, b) => {
         if(ascending){
           if ( a[payload] > b[payload] ){
@@ -62,6 +69,15 @@ export const category = {
       }
     }
   },
+  // handleSearch: (state, payload) => {
+  //
+  //   };
+  //
+  //   return{
+  //     ...state,
+  //     products
+  //   }
+  // },
   effects: dispatch => ({
   }),
 };
