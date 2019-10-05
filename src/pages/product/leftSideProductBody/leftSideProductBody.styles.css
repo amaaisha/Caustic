@@ -1,0 +1,25 @@
+.leftSideImage {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.productImage {
+	background-image: url("../../../assets/wonz.jpg");
+	background-size: cover;
+	height: 60%;
+	width: 60%;
+	transition: transform 2s, filter 1.5s ease-in-out;
+	transform-origin: center center;
+	filter: brightness(50%);
+}
+
+.productImage:Hover {
+	filter: brightness(80%);
+	transform: scale(1.2);
+}
+

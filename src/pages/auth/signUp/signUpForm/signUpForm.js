@@ -6,7 +6,18 @@ import { store } from '../../../../redux/store';
 import Button from '../button/button';
 
 const { dispatch } = store;
+import './signUpForm.styles.css';
 
+const SignUpForm = () => {
+	return (
+		<form className='signUpFormContainer'>
+			<input type='text' placeholder='First Name'/>
+			<input type='text' placeholder='Last Name'/>
+			<input type='email' placeholder='Email'/>
+			<input type='password' placeholder='Password'/>
+		</form>
+	);
+};
 const signUp = (values) => {
   dispatch.user.signUp(values);
 };
@@ -52,4 +63,4 @@ const Form = () => (
   </Formik>
 );
 
-export default Form;
+export default SignUpForm;

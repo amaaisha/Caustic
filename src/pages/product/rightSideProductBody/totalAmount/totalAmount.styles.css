@@ -1,0 +1,51 @@
+.totalAmountContainer {
+	height: 25%;
+	width: 100%;
+display: flex;
+	flex-direction: row;
+}
+
+.quantityButtons {
+	display: flex;
+	flex-direction: row;
+}
+
+.totalAmountTexts {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.totalAmountButtons {
+	height: 100%;
+	width: 50%;
+	padding-left: 14px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.totalAmountButtons button {
+	height: 30px;
+	width: 50px;
+	border-color: darkgray;
+	outline: none;
+}
+
+.totalAmountButtonsSpan {
+	height: 30px;
+	width: 50px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.totalAmountButtons p {
+	font-size: large;
+	font-weight: lighter;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+}

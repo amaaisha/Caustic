@@ -8,6 +8,14 @@ import LoginButton from '../loginButton/loginButton';
 
 const { dispatch } = store;
 
+const LoginForm = () => {
+	return (
+		<form className='logInFormContainer'>
+			<input type='email' placeholder='Email'/>
+			<input type='password' placeholder='Password'/>
+		</form>
+	);
+};
 const login = (values) => {
   dispatch.user.login(values);
 };

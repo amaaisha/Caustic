@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { store } from '../../redux/store';
 import './productPage.styles.css';
+import RightSideProductBody from './rightSideProductBody/rightSideProductBody';
+import LeftSideProductBody from "./leftSideProductBody/leftSideProductBody";
 
 const { dispatch } = store;
 
@@ -39,6 +41,8 @@ const ProductPage = ({ categories, products, category }) => {
       <div className='productContainer'>
         <div className='productHeader'>
           <div className='product'>Product</div>
+          <div className='productHeaderLinks'>
+            <Link to='/' className='homeSpan'><span>Home</span></Link> / <Link to='/' className='homeSpan'><span>All Products</span></Link> / <span>Product</span>
           <div className='home-create'>
             <Link to='/' className='homeSpan'><span>Home</span></Link>
 
@@ -50,6 +54,8 @@ const ProductPage = ({ categories, products, category }) => {
           </div>
         </div>
         <div className='productBody'>
+            <LeftSideProductBody />
+            <RightSideProductBody />
           <div className='leftSideImage'>
             <div className='image' />
           </div>

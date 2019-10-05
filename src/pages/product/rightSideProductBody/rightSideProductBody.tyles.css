@@ -1,0 +1,44 @@
+.rightSideContent {
+	height: 100%;
+	width: 50%;
+}
+
+.productNamePriceRating {
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.productDescription {
+	width: 100%;
+	height: 25%;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.productDescription p {
+	font-size: large;
+	font-weight: lighter;
+	padding: 20px 20px 20px 0px;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.productName {
+	font-size: xx-large;
+	-webkit-font-smoothing: antialiased;
+}
+
+.productPrice {
+	font-size: large;
+	color: darkgray;
+}
+
+.productRating {
+	font-size: large;
+	color: darkgray;
+}
+

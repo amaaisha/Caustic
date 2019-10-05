@@ -1,0 +1,20 @@
+import React from 'react';
+import './signUpButton.styles.css';
+
+const SignUpButton = () => {
+	return (
+		<div className='createAccountButton'>
+			{/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+			<button>
+				Create Account
+			</button>
+		</div>
+	)
+};
+const Button = ({ onClick }) => (
+  <div onClick={onClick} className='bodyButton'>
+    <button>Create Account</button>
+  </div>
+);
+
+export default SignUpButton;
