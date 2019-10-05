@@ -1,28 +1,17 @@
 import React from 'react';
-import './form.styles.css';
 import { Formik } from 'formik';
 import signUpSchema from '../../../../utils/validation/signUpSchema';
 import { store } from '../../../../redux/store';
-import Button from '../button/button';
+import './signUpForm.styles.css';
+import SignUpButton from '../signUpButton/signUpButton';
 
 const { dispatch } = store;
-import './signUpForm.styles.css';
 
-const SignUpForm = () => {
-	return (
-		<form className='signUpFormContainer'>
-			<input type='text' placeholder='First Name'/>
-			<input type='text' placeholder='Last Name'/>
-			<input type='email' placeholder='Email'/>
-			<input type='password' placeholder='Password'/>
-		</form>
-	);
-};
 const signUp = (values) => {
   dispatch.user.signUp(values);
 };
 
-const Form = () => (
+const SignUpForm = () => (
   <Formik
     initialValues={{
       firstName: '',
@@ -35,7 +24,7 @@ const Form = () => (
   >
     {({ handleSubmit, handleChange }) => (
       <>
-        <form className='formContainer'>
+        <form className='signUpFormContainer'>
           <input
             onChange={handleChange('firstName')}
             type='text'
@@ -57,7 +46,7 @@ const Form = () => (
             placeholder='Password'
           />
         </form>
-        <Button onClick={handleSubmit} />
+        <SignUpButton onClick={handleSubmit} />
       </>
     )}
   </Formik>

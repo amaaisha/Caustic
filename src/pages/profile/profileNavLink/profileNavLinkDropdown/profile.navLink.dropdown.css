@@ -1,4 +1,5 @@
 .profileNavLinkDropdownContainer {
+    box-shadow: 0 30px 106px -37px #dddddd;
     position: absolute;
     display: none;
     top: 120px;
