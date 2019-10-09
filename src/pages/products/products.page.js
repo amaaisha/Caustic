@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Button, FlexboxGrid, Input} from "rsuite";
 import {connect} from 'react-redux'
 import {store} from '../../redux/store'
 
@@ -19,43 +20,65 @@ const ProductsPage = ({categories, products, category}) => {
 
 
   const sortByName = () => {
+    dispatch.category.sortProducts('name');
+  };
+
+  const sortByPrice = () => {
     dispatch.category.sortProducts('price');
   };
 
 
-  return(
-    <>
-      <input type={'text'}
-      placeholder={'Search.....'}
-      onChange={handleSearch}/>
 
+  const searchProducts = (query) => {
+    dispatch.category.searchedProducts(query);
+  };
+
+  return(
+    <FlexboxGrid>
+      <FlexboxGrid.Item colspan={24}>
+      <Input size={'lg'} type={'text'}
+      placeholder={'Search.....'}
+      onChange={searchProducts}/>
+
+      <br/>
+      <FlexboxGrid justify={'end'}>
+        <Button onClick={sortByName}> Sort by name</Button>
+        <Button onClick={sortByPrice}> Sort by price </Button>
+      </FlexboxGrid>
+      </FlexboxGrid.Item>
+
+      <FlexboxGrid.Item colspan={6}>
       <h2>Categories</h2>
       {categories.map(({id, name}) =>
         <div key={id}>
-          <button onClick={() => handleClick(id)}>{name}</button>
+          <Button onClick={() => handleClick(id)}>{name}</Button>
         </div>
       )}
-      <br/>
+      </FlexboxGrid.Item>
+
+      <FlexboxGrid.Item colspan={18}>
       <h2>Products</h2>
-      <button onClick={getAllProducts}>All</button>
+      <Button onClick={getAllProducts}>All</Button>
       {category.name && <h4>Category: {category.name}</h4>}
-      {products.map(product =>
-        <div key={product.id}>
-          <p>{product.name}</p>
-        </div>
+      <FlexboxGrid>
+      {products.length > 0 && products.map(product =>
+        <FlexboxGrid.Item colspan={8} key={product.id}>
+          <h4>{product.name} : {`$`}{product.price}</h4>
+          <img src ={product.picture} width={300} height={300}/>
+        </FlexboxGrid.Item>
       )}
-      <button onClick={sortByName}> Sort </button>
-    </>
+        {products.length === 0 && <h3>No result</h3>}
+      </FlexboxGrid>
+      </FlexboxGrid.Item>
+    </FlexboxGrid>
   );
 };
 
 const mapState = state => {
-  console.log(state.category.products)
-
   return {
     categories: state.category.categories,
     category: state.category.category,
-    products: state.category.products,
+    products: state.category.query ? state.category.searchedProducts : state.category.products,
   };
 };
 

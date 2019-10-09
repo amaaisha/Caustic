@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router/immutable';
 import Routes from './pages/routes/routes';
+import 'rsuite/dist/styles/rsuite-default.css';
 import {store,history} from './redux/store'
 
 const {dispatch} = store;

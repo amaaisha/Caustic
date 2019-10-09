@@ -3,18 +3,13 @@ import categoryArray from '../../utils/mock'
 const categoryState = {
   categories: categoryArray,
   products: [],
+  searchedProducts: [],
   category: {
     name: '',
     products: []
   },
   ascending: true,
-  query: '',
-  results: {},
-  loading: false,
-  message: '',
-  totalResults: 0,
-  totalPages: 0,
-  currentPageNo: 0
+  query: ''
 };
 
 export const category = {
@@ -67,17 +62,18 @@ export const category = {
         ascending: !ascending,
         products
       }
+    },
+    searchedProducts : (state, payload) => {
+      const searchedProducts = state.products.filter(({name}) => {
+        return name.toLowerCase().includes(payload.toLowerCase())
+      });
+      return {
+        ...state,
+        query: payload,
+        searchedProducts
+      };
     }
   },
-  // handleSearch: (state, payload) => {
-  //
-  //   };
-  //
-  //   return{
-  //     ...state,
-  //     products
-  //   }
-  // },
   effects: dispatch => ({
   }),
 };
