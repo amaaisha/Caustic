@@ -6,10 +6,10 @@ const categoryState = {
   searchedProducts: [],
   category: {
     name: '',
-    products: []
+    products: [],
   },
   ascending: true,
-  query: ''
+  query: '',
 };
 
 export const category = {
@@ -31,48 +31,49 @@ export const category = {
       return {
         ...state,
         category,
-        products: category.products
-      }
+        products: category.products,
+      };
     },
     sortProducts: (state, payload) => {
-      const products = state.products.slice(0);
-      const {ascending} = state;
-      products.sort((a, b) => {
-        if(ascending){
-          if ( a[payload] > b[payload] ){
+      // eslint-disable-next-line max-len
+      const sortedProducts = state.query ? state.searchedProducts.slice(0) : state.products.slice(0);
+      const { ascending } = state;
+      sortedProducts.sort((a, b) => {
+        if (ascending) {
+          if (a[payload] > b[payload]) {
             return -1;
           }
-          if ( a[payload] < b[payload] ){
-            return 1;
-          }
-          return 0;
-        }else{
-          if ( a[payload] < b[payload] ){
-            return -1;
-          }
-          if ( a[payload] > b[payload] ){
+          if (a[payload] < b[payload]) {
             return 1;
           }
           return 0;
         }
-        });
+        if (a[payload] < b[payload]) {
+          return -1;
+        }
+        if (a[payload] > b[payload]) {
+          return 1;
+        }
+        return 0;
+      });
 
-      return{
+      console.log(sortedProducts);
+      return {
         ...state,
         ascending: !ascending,
-        products
-      }
+        searchedProducts: state.query ? sortedProducts : state.searchedProducts,
+        products: state.query ? state.products : sortedProducts,
+      };
     },
-    searchedProducts : (state, payload) => {
-      const searchedProducts = state.products.filter(({name}) => {
-        return name.toLowerCase().includes(payload.toLowerCase())
-      });
+    searchedProducts: (state, payload) => {
+      // eslint-disable-next-line max-len
+      const searchedProducts = state.products.filter(({ name }) => name.toLowerCase().includes(payload.toLowerCase()));
       return {
         ...state,
         query: payload,
-        searchedProducts
+        searchedProducts,
       };
-    }
+    },
   },
   effects: (dispatch) => ({
   }),
