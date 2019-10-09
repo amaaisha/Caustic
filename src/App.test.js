@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './pages/routes/routes';
+import Router from './components/routes/routes';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

@@ -1,0 +1,14 @@
+.profileNavLinkDropdownContainer {
+    box-shadow: 0 30px 106px -37px #dddddd;
+    position: absolute;
+    display: none;
+    top: 120px;
+    right: 10px;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+}
+
+.profileNavLinkContainer:hover .profileNavLinkDropdownContainer {
+    display: inline;
+}

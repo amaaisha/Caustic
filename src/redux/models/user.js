@@ -55,7 +55,7 @@ export const user = {
       ...userState,
     }),
   },
-  effects: dispatch => ({
+  effects: (dispatch) => ({
     signUp: async (payload) => {
       await handleAuth(
         dispatch,
@@ -86,8 +86,7 @@ export const user = {
       dispatch.user.loginSuccess(payload);
       const response = await userApi.getMe(payload);
       if (!response.success) {
-      }
-      else {
+      } else {
         await localStorage.setItem('user', JSON.stringify(response.result));
         dispatch.user.loginSuccess(response.result);
       }

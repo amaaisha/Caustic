@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Formik } from 'formik';
-import profileSchema from "../../utils/validation/profileSchema";
-import {store} from "../../redux/store";
+import profileSchema from '../../utils/validation/profileSchema';
+import { store } from '../../redux/store';
 
 
 const { dispatch } = store;
@@ -10,7 +10,7 @@ const handleEditProfile = (values) => {
   dispatch.user.editProfile(values);
 };
 
-const EditProfile = ({user}) => (
+const EditProfile = ({ user }) => (
   <Formik
     initialValues={user}
     validationSchema={profileSchema}
@@ -25,12 +25,11 @@ const EditProfile = ({user}) => (
         <input onChange={handleChange('email')} value={values.email} placeholder='email' />
         <button type='submit' onClick={handleSubmit}>Submit</button>
       </>
-    )
-    }
+    )}
   </Formik>
 );
 
-const mapState = state => ({
+const mapState = (state) => ({
   user: state.user,
 });
 

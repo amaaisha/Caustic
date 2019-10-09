@@ -1,0 +1,74 @@
+.logInContainer {
+	width: 100vw;
+	height: 100vh;
+	flex: 1;
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+}
+
+.logInHeader {
+	height: 20%;
+	width: 100%;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.account {
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	line-height: 1.7;
+	font-family: kirvyregular, sans-serif;
+}
+
+.logInHeaderLinks {
+	font-size: 16px;
+	font-family: Jura, serif;
+}
+
+.logInHomeSpan {
+	text-decoration: none;
+	color: black;
+}
+
+.logInHomeSpan:Hover {
+	text-decoration: none;
+	color: #9f7a49;
+}
+
+.logInBody {
+	height: 60%;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logInBody p{
+	padding-bottom: 30px;
+	font-size: large;
+	font-weight: lighter;
+}
+
+.return {
+	padding-top: 30px;
+}
+
+.textLinks {
+	text-decoration: none;
+	color: black;
+}
+
+.textLinks:Hover {
+	color: #9f7a49;
+	-webkit-transition: color 0.5s ease-out;
+
+}

@@ -1,38 +1,22 @@
 import React from 'react';
-import { Formik } from 'formik';
-import signUpSchema from '../../../utils/validation/signUpSchema'
-import {store} from '../../../redux/store'
-
-const {dispatch} = store;
-
-const signUp = (values) => {
-  dispatch.user.signUp(values);
-};
+import './signUp.styles.css';
+import { Link } from 'react-router-dom';
+import SignUpForm from './signUpForm/signUpForm';
 
 const SignUpPage = () => (
-  <Formik
-    initialValues={{
-      firstName: '',
-      lastName: '',
-      email: '',
-      password: '',
-    }}
-    validationSchema={signUpSchema}
-    onSubmit={signUp}
-  >
-    {({ handleSubmit, handleChange }) => (
-      <>
-        <h1>Sign Up</h1>
-        <input onChange={handleChange('firstName')}  placeholder='First Name' />
-        <input onChange={handleChange('lastName')}  placeholder='last Name' />
-        <input onChange={handleChange('email')}  placeholder='email' />
-        <input onChange={handleChange('password')}  placeholder='password' />
-
-        <button type='submit' onClick={handleSubmit}>Submit</button>
-      </>
-    )
-    }
-  </Formik>
+  <div className='signUpContainer'>
+    <div className='signUpHeader'>
+      <div className='createAccount'>Create Account</div>
+      <div className='signUpHeaderLinks'>
+        <Link to='/' className='homeSpan'>Home</Link>
+/ Create Account
+      </div>
+    </div>
+    <div className='signUpBody'>
+      <SignUpForm />
+    </div>
+    <div className='signUpFooter' />
+  </div>
 );
 
 export default SignUpPage;

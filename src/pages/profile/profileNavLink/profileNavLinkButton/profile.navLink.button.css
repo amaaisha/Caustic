@@ -1,0 +1,14 @@
+.profileNavLinkButtonContainer {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profileNavLinkButtonText {
+    font-size: 20px;
+}
+
+.profileNavLinkButtonContainer:hover {
+    color: #9f7a49;
+}

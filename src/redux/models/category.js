@@ -1,4 +1,4 @@
-import categoryArray from '../../utils/mock'
+import categoryArray from '../../utils/mock';
 
 const categoryState = {
   categories: categoryArray,
@@ -17,18 +17,18 @@ export const category = {
   reducers: {
     getProducts: (state) => {
       let productsArray = [];
-      state.categories.map(({products}) => {
+      state.categories.map(({ products }) => {
         productsArray = [...productsArray, ...products];
       });
-      return{
+      return {
         ...state,
         products: productsArray,
         category: {},
-      }
+      };
     },
     getCategoryProducts: (state, payload) => {
-      const category = state.categories.find( ({id}) => id === payload);
-      return{
+      const category = state.categories.find(({ id }) => id === payload);
+      return {
         ...state,
         category,
         products: category.products
@@ -74,6 +74,6 @@ export const category = {
       };
     }
   },
-  effects: dispatch => ({
+  effects: (dispatch) => ({
   }),
 };

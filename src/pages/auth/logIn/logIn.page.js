@@ -1,34 +1,22 @@
 import React from 'react';
-import { Formik } from 'formik';
-import loginSchema from '../../../utils/validation/loginSchema'
-import {store} from "../../../redux/store";
-
-const {dispatch} = store;
-
-const login = (values) => {
-  dispatch.user.login(values);
-};
-
+import { Link } from 'react-router-dom';
+import './login.styles.css';
+import LoginForm from './logInForm/loginForm';
 
 const LogInPage = () => (
-  <Formik
-    initialValues={{
-      email: '',
-      password: '',
-    }}
-    validationSchema={loginSchema}
-    onSubmit={login}
-  >
-    {({ handleSubmit, handleChange }) => (
-      <>
-        <h1>Log In</h1>
-        <input onChange={handleChange('email')}  placeholder='email' />
-        <input onChange={handleChange('password')}  placeholder='password' />
-        <button type='submit' onClick={handleSubmit}>Submit</button>
-      </>
-    )
-    }
-  </Formik>
+  <div className='logInContainer'>
+    <div className='logInHeader'>
+      <div className='account'>Account</div>
+      <div className='logInHeaderLinks'>
+        <Link to='/' className='logInHomeSpan'>Home</Link>
+
+/ Account
+      </div>
+    </div>
+    <div className='logInBody'>
+      <LoginForm />
+    </div>
+  </div>
 );
 
 export default LogInPage;
