@@ -1,9 +1,11 @@
 import React from 'react';
 import './leftSideProductBody.styles.css';
 
-const LeftSideProductBody = () => (
+const LeftSideProductBody = ({ image }) => (
   <div className='leftSideImage'>
-    <div className='productImage' />
+    <div className='productImage'>
+      <img src={image} alt={'none'} />
+    </div>
   </div>
 );
 

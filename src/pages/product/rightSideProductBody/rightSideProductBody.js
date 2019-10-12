@@ -3,11 +3,11 @@ import ProductSizeColorMaterial from './productsizeColorMaterial/productSizeColo
 import './rightSideProductBody.tyles.css';
 import TotalAmount from './totalAmount/totalAmount';
 
-const RightSideProductBody = () => (
+const RightSideProductBody = ({ product }) => (
   <div className='rightSideContent'>
     <div className='productNamePriceRating'>
-      <p className='productName'>KYLE KUZMA</p>
-      <p className='productPrice'>$25000000</p>
+      <p className='productName'>{product.name}</p>
+      <p className='productPrice'>{product.price}</p>
       <p className='productRating'>star rating</p>
     </div>
     <div className='productDescription'>

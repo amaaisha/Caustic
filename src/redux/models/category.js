@@ -4,6 +4,7 @@ const categoryState = {
   categories: categoryArray,
   products: [],
   searchedProducts: [],
+  product: [],
   category: {
     name: '',
     products: [],
@@ -12,11 +13,13 @@ const categoryState = {
   query: '',
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export const category = {
   state: { ...categoryState },
   reducers: {
     getProducts: (state) => {
       let productsArray = [];
+      // eslint-disable-next-line array-callback-return
       state.categories.map(({ products }) => {
         productsArray = [...productsArray, ...products];
       });
@@ -27,6 +30,7 @@ export const category = {
       };
     },
     getCategoryProducts: (state, payload) => {
+      // eslint-disable-next-line no-shadow
       const category = state.categories.find(({ id }) => id === payload);
       return {
         ...state,
@@ -57,7 +61,6 @@ export const category = {
         return 0;
       });
 
-      console.log(sortedProducts);
       return {
         ...state,
         ascending: !ascending,
@@ -72,6 +75,13 @@ export const category = {
         ...state,
         query: payload,
         searchedProducts,
+      };
+    },
+    setPickedProduct: (state, payload) => {
+      const product = state.products.find(({ id }) => id === payload);
+      return {
+        ...state,
+        product,
       };
     },
   },

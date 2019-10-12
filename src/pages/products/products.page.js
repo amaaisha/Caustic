@@ -17,7 +17,7 @@ const ProductsPage = ({ categories, products, category }) => {
   return (
     <FlexboxGrid>
       <ProductsSearch />
-      <Categories categories={categories} category={category}/>
+      <Categories categories={categories} category={category} />
       <AllProducts
         categories={categories}
         products={products}
@@ -31,6 +31,7 @@ const mapState = (state) => ({
   categories: state.category.categories,
   category: state.category.category,
   products: state.category.query ? state.category.searchedProducts : state.category.products,
+  product: state.category.product,
 });
 
 export default connect(mapState)(ProductsPage);

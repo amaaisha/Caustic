@@ -9,8 +9,6 @@
 
 
 .productImage {
-	background-image: url("../../../assets/wonz.jpg");
-	background-size: cover;
 	height: 60%;
 	width: 60%;
 	transition: transform 2s, filter 1.5s ease-in-out;
