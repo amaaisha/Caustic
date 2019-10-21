@@ -24,7 +24,7 @@ class userApi {
   static signUp(user) {
     const formData = new FormData();
 
-    console.log(user)
+    console.log(user);
     for (const [key, value] of Object.entries(user)) {
       formData.append(key, value);
     }

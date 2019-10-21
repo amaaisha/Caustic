@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="">
+    <list default="true" id="c9ec5ff4-9c71-4c33-b55e-50e6a086739e" name="Default Changelist" comment="u">
+      <change afterPath="$PROJECT_DIR$/src/api/categoryApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/productApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/myProduct/myProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/myProduct/myProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/models/categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/models/myProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validation/createProductSchema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/userApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/userApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/logIn/logIn.page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/signUp/signUp.page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ViewProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/logIn/logInForm/loginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/logIn/logInForm/loginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -133,6 +140,18 @@
       <workItem from="1569403191024" duration="8403000" />
       <workItem from="1569448138137" duration="20812000" />
       <workItem from="1569500989982" duration="1934000" />
+      <workItem from="1570019915760" duration="2159000" />
+      <workItem from="1570029433530" duration="1953000" />
+      <workItem from="1570104866664" duration="6074000" />
+      <workItem from="1570355897442" duration="772000" />
+      <workItem from="1570431044434" duration="5638000" />
+      <workItem from="1570535582899" duration="16655000" />
+      <workItem from="1570600175265" duration="1355000" />
+      <workItem from="1570633218643" duration="491000" />
+      <workItem from="1570714106459" duration="2844000" />
+      <workItem from="1570785288685" duration="8000" />
+      <workItem from="1570872992936" duration="340000" />
+      <workItem from="1570880110808" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Routes">
       <created>1569259749230</created>
@@ -176,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569408116901</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="logIn and Sign up, View and Edit profile created.">
+      <created>1569920962227</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569920962227</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +230,7 @@
     <MESSAGE value="moved navigation to router." />
     <MESSAGE value="Moved each routes into individual components." />
     <MESSAGE value="protected routes are working. changed routes to small letters" />
-    <option name="LAST_COMMIT_MESSAGE" value="protected routes are working. changed routes to small letters" />
+    <MESSAGE value="logIn and Sign up, View and Edit profile created." />
+    <option name="LAST_COMMIT_MESSAGE" value="logIn and Sign up, View and Edit profile created." />
   </component>
 </project>

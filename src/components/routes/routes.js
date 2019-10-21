@@ -12,6 +12,8 @@ import CheckoutPage from '../../pages/checkout/checkout.page';
 import ProductsPage from '../../pages/products/products.page';
 import ProductPage from '../../pages/product/product.page';
 import SearchPage from '../../pages/search/search.page';
+import CreateProduct from '../../pages/myProduct/myProduct';
+
 
 const Routes = () => (
   <Router>
@@ -27,6 +29,7 @@ const Routes = () => (
         <Route exact path='/cart' component={CartPage} />
         <Route exact path='/checkout' component={CheckoutPage} />
         <Route exact path='/products' component={ProductsPage} />
+        <ProtectedRoute exact path='/new-product' component={CreateProduct} />
         <Route exact path='/search' component={SearchPage} />
       </Switch>
     </div>
